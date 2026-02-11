@@ -1,0 +1,99 @@
+* {
+    margin: 0px;
+}
+
+body {
+    background-blend-mode: color;
+}
+
+@font-face {
+    font-family: 'edo-sz';
+    src: url(../Fonts/edo_sz/edosz.ttf);
+}
+
+main {
+    background-image: url("../Images/MainpageBackground3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 200vh;
+}
+
+.Title {
+    width: 100vw;
+    height: calc(100vh - 14.3125em);
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.Title > h1 {
+    font-family: 'edo-sz';
+    font-size: 10em;
+    font-weight: lighter;
+    color: white;
+}
+
+.PageTwo {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    margin-top: 14.3125em;
+    height: 100vh;
+    width: 100vw;
+}
+
+.PageTwo > h1 {
+    font-family: 'edo-sz';
+    font-size: 150px;
+    font-weight: lighter;
+    color: white;
+    text-decoration: underline;
+    text-underline-offset: 0.1em;
+}
+
+nav {
+    display: inherit;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    height: 82.47vh;
+    width: 100vw;
+}
+
+.Button {
+    display: inherit;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    width: 84vw;
+    height: 14.2vh;
+    margin-bottom: 4vh;
+}
+
+.Button > h1 {
+    font-family: 'edo-sz';
+    font-size: 9em;
+    font-weight: lighter;
+}
+
+.Button > span {
+    font-size: 3.8em;
+    color: #D9D9D9;
+}
+
+@keyframes scaleup {
+    0%{transform: scale(1);}
+    50%{transform: scale(1.1);}
+    100%{transform: scale(1);}
+}
+
+#Button1:hover, #Button2:hover, #Button3:hover, #Button4:hover {
+    background-image: url("../Images/fire.gif");
+    animation-name: scaleup;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
