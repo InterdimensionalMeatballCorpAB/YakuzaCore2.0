@@ -97,3 +97,19 @@ nav {
     animation-duration: 4s;
     animation-iteration-count: infinite;
 }
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 9;
+    padding: 5vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3vh;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}

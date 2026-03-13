@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <link href="CSS/Mainpage.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
 </head>
 <body style="background-color: black;">
     <main>
+        <div id="popup" class="popup">
+            This site is not finished and may contain spoilers. Read at your own risk
+            <button onclick="closepop()">Ok</button>
+        </div>
         <div class="Title">
             <h1>
                 YAKUZA-CORE
@@ -43,5 +48,13 @@
             </nav>
         </div>
     </main>
+
+    <script>
+        function closepop(){
+        console.log("hej");
+        const id = document.getElementById("popup");
+        id.remove();
+        }
+    </script>
 </body>
 </html>

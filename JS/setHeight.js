@@ -1,3 +1,4 @@
+//Används inte längre
 function setHeight(bodyid, id){
     const body = document.getElementById(bodyid);
     const element = document.getElementById(id);
@@ -11,4 +12,10 @@ function setHeight(bodyid, id){
             break;
         }
     }
+}
+
+function ClosePop(a){
+    console.log("hej");
+    const id = document.getElementById(a);
+    id.remove();
 }
